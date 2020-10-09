@@ -1,0 +1,45 @@
+.large-image {
+  padding: 50px 50px;
+  margin-bottom: 50px;
+}
+
+.introduct {
+  margin-top: 50%;
+  margin-left: 30px;
+}
+
+.hello {
+  color: red;
+}
+
+.quotation {
+  font-size: 200%;
+}
+
+.from, .quotation{
+  color: #bfbaba;
+}
+
+.edu {
+  font-size: 150%;
+}
+
+.skillset {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .introduct {
+    font-size: 100%;
+    margin-top: 10%;
+    margin-left: 0;
+  }
+
+  .large-image {
+    margin: 10px 10px;
+  }
+
+  .quotation {
+  font-size: 100%;
+  }
+}
