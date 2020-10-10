@@ -1,0 +1,137 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.large-image {
+  padding: 50px 50px;
+  margin-bottom: 50px;
+}
+
+.introduct {
+  margin-top: 50%;
+  margin-left: 30px;
+}
+
+.hello {
+  color: red;
+}
+
+.quotation {
+  font-size: 180%;
+}
+
+.from, .quotation{
+  color: #bfbaba;
+}
+
+#edu {
+  font-size: 150%;
+}
+
+.edu {
+  position: relative;
+  left: -700px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#illustration {
+  position: relative;
+  top: 1000px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#skillset, #certif, #edu, #contact {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.skill-thumb div{
+  position: relative;
+  top: 800px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#certif {
+  margin-top: 200px;
+}
+
+.carousel-control {
+  transition: 0.3s;
+}
+
+.carousel-control:hover {
+  background-color: #80808078;
+}
+
+.carousel-caption {
+  background-color: #00000091;
+}
+
+.icon-control {
+  color: black;
+}
+
+#contact .row {
+  margin-bottom: 50px;
+}
+
+.contact-logo {
+  max-height: 100px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.contact-logo:hover {
+  -webkit-box-shadow: -4px 6px 13px 1px rgba(87,87,87,1);
+  -moz-box-shadow: -4px 6px 13px 1px rgba(87,87,87,1);
+  box-shadow: -4px 6px 13px 1px rgba(87,87,87,1);
+
+  transform: translateY(-10px);
+}
+
+footer {
+  height: 50px;
+  background-color: #c8c8c8;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  #navbarNavDropdown {
+    position: absolute;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .introduct {
+    font-size: 100%;
+    margin-top: 10%;
+    margin-left: 0;
+  }
+
+  .edu {
+    font-size: 70%;
+  }
+
+  .large-image {
+    margin: 10px 10px;
+  }
+
+  .quotation {
+    font-size: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  #skillset, #certif, #edu, #contact {
+    margin-top: 50px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  #contact .row {
+    margin-bottom: 10px;
+  }  
+}
