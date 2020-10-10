@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: relative;
+}
+
 .large-image {
   padding: 50px 50px;
   margin-bottom: 50px;
@@ -13,7 +21,7 @@
 }
 
 .quotation {
-  font-size: 200%;
+  font-size: 180%;
 }
 
 .from, .quotation{
@@ -24,8 +32,16 @@
   font-size: 150%;
 }
 
-.skillset {
+#skillset, #certif {
   margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 992px) {
+  #navbarNavDropdown {
+    position: absolute;
+    right: 0px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,6 +56,6 @@
   }
 
   .quotation {
-  font-size: 100%;
+    font-size: 100%;
   }
 }
