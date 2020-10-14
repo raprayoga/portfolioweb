@@ -2,16 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 /* Loading Image */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('../img/Preloader_6-.gif') center no-repeat #bfbaba; /* The icon from SmallEnvelop.com */
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../img/Preloader_6-.gif") center no-repeat #bfbaba; /* The icon from SmallEnvelop.com */
 }
 
 .large-image {
@@ -32,7 +39,8 @@ html {
   font-size: 180%;
 }
 
-.from, .quotation{
+.from,
+.quotation {
   color: #bfbaba;
 }
 
@@ -54,12 +62,16 @@ html {
   transition: 0.5s;
 }
 
-#skillset, #certif, #edu, #contact {
+#skillset,
+#certif,
+#edu,
+#contact,
+#project {
   padding-top: 100px;
   margin-bottom: 100px;
 }
 
-.skill-thumb div{
+.skill-thumb div {
   position: relative;
   top: 800px;
   opacity: 0;
@@ -97,9 +109,9 @@ html {
 }
 
 .contact-logo:hover {
-  -webkit-box-shadow: -4px 6px 13px 1px rgba(87,87,87,1);
-  -moz-box-shadow: -4px 6px 13px 1px rgba(87,87,87,1);
-  box-shadow: -4px 6px 13px 1px rgba(87,87,87,1);
+  -webkit-box-shadow: -4px 6px 13px 1px rgba(87, 87, 87, 1);
+  -moz-box-shadow: -4px 6px 13px 1px rgba(87, 87, 87, 1);
+  box-shadow: -4px 6px 13px 1px rgba(87, 87, 87, 1);
 
   transform: translateY(-10px);
 }
@@ -108,6 +120,42 @@ footer {
   height: 50px;
   background-color: #c8c8c8;
   padding: 10px;
+}
+
+.project-image {
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #0000006e;
+  transition: 0.5s;
+}
+
+.visi-site {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  z-index: 99;
+  top: 30%;
+  left: 43%;
+  opacity: inherit;
+}
+
+.visi-site p {
+  margin-top: 40%;
+  font-weight: bold;
+}
+
+.overlay:hover {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 992px) {
@@ -137,7 +185,11 @@ footer {
     padding: 0 10px 0 10px;
   }
 
-  #skillset, #certif, #edu, #contact {
+  #skillset,
+  #certif,
+  #edu,
+  #contact,
+  #project {
     margin-top: 50px;
     padding-top: 0;
     margin-bottom: 50px;
@@ -145,7 +197,7 @@ footer {
 
   #contact .row {
     margin-bottom: 10px;
-  }  
+  }
 
   h2 {
     font-size: 130%;
@@ -156,6 +208,16 @@ footer {
   }
 
   .se-pre-con {
-    background: url('../img/Preloader_6.gif') center no-repeat #bfbaba;
+    background: url("../img/Preloader_6.gif") center no-repeat #bfbaba;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .overlay {
+    opacity: 1;
+  }
+
+  .visi-site {
+    left: 40% !important;
   }
 }
