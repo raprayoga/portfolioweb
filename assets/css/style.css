@@ -22,17 +22,13 @@ html {
 }
 
 .large-image {
-  padding: 50px 50px;
+  padding: 50px 0px;
   margin-bottom: 50px;
 }
 
 .introduct {
-  margin-top: 50%;
+  margin-top: 25%;
   margin-left: 30px;
-}
-
-.hello {
-  color: red;
 }
 
 .quotation {
@@ -168,7 +164,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .introduct {
-    font-size: 100%;
+    font-size: 150%;
     margin-top: 10%;
     margin-left: 0;
   }
@@ -178,6 +174,7 @@ footer {
   }
 
   .large-image {
+    padding: 50px 50px;
     margin: 10px 0;
   }
 
