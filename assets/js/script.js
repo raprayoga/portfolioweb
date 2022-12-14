@@ -1,10 +1,4 @@
 $( document ).ready(function() {
-  // Loading Image
-  $(window).on('load', function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");
-	});
-  // Loading Image
 
   $('.carousel').carousel({
     interval: 3500
