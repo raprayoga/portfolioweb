@@ -142,6 +142,35 @@ footer {
   font-weight: bold;
 }
 
+.visit-sample-site,
+.visit-github {
+  border-radius: 5px;
+  width: 130px;
+  padding: 10px 10px;
+  background-color: white;
+  position: absolute;
+  z-index: 99;
+  top: 40%;
+  left: 50%;
+  opacity: inherit;
+  transform: translate(-50%, -50%);
+}
+
+.visit-github {
+  top: 60%;
+}
+
+.visit-sample-site:hover,
+.visit-github:hover {
+  opacity: 90%;
+  transition: all 300ms;
+}
+
+.visit-sample-site p,
+.visit-github p {
+  margin: 0;
+}
+
 .overlay:hover {
   opacity: 1;
 }
