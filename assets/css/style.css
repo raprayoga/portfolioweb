@@ -175,6 +175,10 @@ footer {
   opacity: 1;
 }
 
+.profile-image {
+  height: calc(100vh - 20%);
+}
+
 @media only screen and (min-width: 992px) {
   #navbarNavDropdown {
     position: absolute;
@@ -234,4 +238,8 @@ footer {
   .visi-site {
     left: 40% !important;
   }
+  
+  .profile-image {
+  height: auto;
+}
 }
