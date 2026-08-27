@@ -1,844 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="A software engineer with 2 years of experience. Experience in an assortment of technologies, including HTML, CSS, Javascript, React JS, Vue JS, React Native, PHP, Laravel, Python, MySQL, Microsoft SQL Server, and GIT.">
-  <title>Portfolio Web | Rafie Achmad Prayoga</title>
+  <meta name="description" content="Rafie Achmad Prayoga - Fullstack Software Engineer specializing in React, Next.js, Vue, Laravel, Node.js. Building scalable web applications and modern digital solutions.">
+  <title>Rafie Achmad Prayoga | Fullstack Software Engineer</title>
   <link rel="canonical" href="https://portfolio.raprayoga.web.id/">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/lightbox.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-  <div class="se-pre-con"></div>
 
   <!-- Navbar -->
-  <header id="navbar-section">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
-      <a class="navbar-brand" href="#navbar-section">
-        <img src="assets/img/favicon.png" width="40" height="40" class="d-inline-block align-top" alt="logo" />
-        RAPRAYOGA
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>raprayoga<span class="logo-bracket">/&gt;</span>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#edu">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skillset">Skillset</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#certif">Certificate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work-exp">Work Experienced</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Rafie Achmad<br><span class="text-accent">Prayoga</span></h1>
+        <p class="hero-role"><span class="typed-prefix">$</span> Fullstack Software Engineer</p>
+        <p class="hero-desc">
+          Results-driven engineer with <strong>5+ years</strong> building scalable web applications, 
+          AI platforms, fintech modules, logistics systems, and e-commerce platforms. 
+          Passionate about clean code and creating technology that makes a difference.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Companies</span>
+          </div>
+        </div>
       </div>
-    </nav>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="assets/img/profile.webp" alt="Rafie Achmad Prayoga" loading="eager" />
+          <div class="hero-image-glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
   </header>
-  <!-- /Navbar -->
 
-  <!-- Large Image For Picture Profile -->
-  <section class="large-image container-fluid px-0">
-    <div class="row justify-content-between mx-0">
-      <div class="col-sm-4 px-0">
-        <a class="example-image-link" href="assets/img/profile.webp" data-lightbox="example-1">
-          <img src="assets/img/profile.webp" alt="profile picture" loading="lazy" class="img-fluid profile-image" />
-        </a>
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">&lt;skills&gt;</p>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-desc">Technologies I work with to build modern applications</p>
       </div>
-      <div class="col-sm-6">
-        <h3 class="align-middle introduct text-center">
-          <span class="text-info"> Rafie Achmad Prayoga</span> | Experienced Software Engineer
-        </h3>
-
-        <p class="mt-3 text-secondary">
-          Results-driven software engineer with 5+ years of hands-on experience  building scalable web applications, AI chatbot platforms, fintech payment modules, logistics systems, e-commerce platforms, and hospital management systems.
-          Strong expertise in React.js, Next.js, Vue.js, TypeScript, Laravel, Node.js, REST API integration, reusable component architecture, and modern frontend development.
-          Adept at solving complex problems, translating ideas into efficient code, and delivering end-to-end solutions.
-          Passionate about clean code, continuous learning, and creating technology that makes a difference. Committed
-          to helping clients overcome technical challenges and achieve their goals with reliable, high-quality software.
-        </p>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#9672;</span> Frontend
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="assets/img/skillset/reactjs_compressed.webp" alt="React JS" loading="lazy" />
+              <span>React JS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/next.png" alt="Next JS" loading="lazy" />
+              <span>Next JS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/vuejs.png" alt="Vue JS" loading="lazy" />
+              <span>Vue JS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/nuxt_compressed.webp" alt="Nuxt JS" loading="lazy" />
+              <span>Nuxt JS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/typescript.png" alt="TypeScript" loading="lazy" />
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/tailwindcss_compressed.webp" alt="Tailwind CSS" loading="lazy" />
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/redux_compressed.webp" alt="Redux" loading="lazy" />
+              <span>Redux</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/html.png" alt="HTML" loading="lazy" />
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/css_compressed.webp" alt="CSS" loading="lazy" />
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#9672;</span> Backend
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="assets/img/skillset/node.png" alt="Node JS" loading="lazy" />
+              <span>Node JS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/honojs.png" alt="Hono JS" loading="lazy" />
+              <span>Hono JS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/php.png" alt="PHP" loading="lazy" />
+              <span>PHP</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/laravel_compressed.webp" alt="Laravel" loading="lazy" />
+              <span>Laravel</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/python.png" alt="Python" loading="lazy" />
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#9672;</span> Database & Tools
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="assets/img/skillset/MySQL_compressed.webp" alt="MySQL" loading="lazy" />
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/mongo.png" alt="MongoDB" loading="lazy" />
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/skillset/git.png" alt="Git" loading="lazy" />
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- /Large Image For Picture Profile -->
-
-  <!-- Quotation -->
-  <section class="container">
-    <div class="row justify-content-center">
-      <q class="quotation">the journey of a thousand miles begins with one step</q>
-    </div>
-  </section>
-  <!-- /Quotation -->
-
-  <!-- Education -->
-  <section class="container-fluid" id="edu">
-    <div class="row">
-      <div class="col-sm-4">
-        <p class="introduct edu">
-          I completed my undergraduate degree in Physics with a GPA of 3.18 at the State University of Jakarta from 2014
-          to 2019.
-        </p>
-      </div>
-      <div class="col-sm-8">
-        <img src="assets/img/Graduate.webp" alt="Graduate Illustration" class="img-fluid" id="illustration"
-          loading="lazy" />
-      </div>
-    </div>
-  </section>
-  <!-- /Education -->
-
-  <!-- SKILL -->
-  <section class="container" id="skillset">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">Skills set</h2>
-      </div>
-    </div>
-    <hr />
-    <div class="row skill-thumb">
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/html.png" alt="HTML image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">HTML</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/css_compressed.webp" alt="css image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">CSS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/typescript.png" alt="typescript image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">TypeScript</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/node.png" alt="nodejs image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Node JS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/vuejs.png" alt="vuejs image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Vue JS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/nuxt_compressed.webp" alt="Nuxt Js image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Nuxt JS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/reactjs_compressed.webp" alt="reactjs image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">React JS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/next.png" alt="Next Js image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Next JS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/redux_compressed.webp" alt="Redux image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Redux</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/tailwindcss_compressed.webp" alt="tailwind image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Tailwind Css</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/php.png" alt="php image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">PHP</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/laravel_compressed.webp" alt="laravel image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Laravel</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/MySQL_compressed.webp" alt="mysql image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">MySQL</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/git.png" alt="git image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">GIT</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/node.png" alt="nodejs image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Node JS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/honojs.png" alt="honojs image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Hono JS</p>
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="assets/img/skillset/mongo.png" alt="mongo image" class="img-thumbnail" loading="lazy" />
-        <p class="text-center">Mongo DB</p>
-      </div>
-    </div>
-  </section>
-  <!-- /SKILL -->
 
   <!-- Work Experience -->
-  <section class="container" id="work-exp">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">Work Experienced :</h2>
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">&lt;experience&gt;</p>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-desc">My professional journey building real-world products</p>
       </div>
-    </div>
-    <hr />
-    <div class="row">
-      <div class="col-sm-2 text-sm-right text-center">
-        <img src="assets/img/mengantar-logo.jpg" alt="Mengantarlogo" class="img-fluid" style="max-width: 150px" loading="lazy" />
-      </div>
-      <div class="col-sm-7">
-        <h5 class="mt-3">
-          Mengantar Karya Bangsa – Frontend Developer/Fullstack Developer <br />February 2024 – August 2026
-        </h5>
-      </div>
-      <div class="col-sm-3">
-        <button type="button" class="btn btn-primary col-12" data-toggle="modal" data-target="#modalMengantar">
-          Look what I do
-        </button>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-sm-2 text-sm-right text-center">
-        <img src="assets/img/dana-logo.jpg" alt="Danalogo" class="img-fluid" style="max-width: 150px" loading="lazy" />
-      </div>
-      <div class="col-sm-7">
-        <h5 class="mt-3">
-          Dana Indonesia – Frontend Developer Consultant under MSBU<br />October 2023 – January 2024
-        </h5>
-      </div>
-      <div class="col-sm-3">
-        <button type="button" class="btn btn-primary col-12" data-toggle="modal" data-target="#modalDana">
-          Look what I do
-        </button>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-sm-2 text-sm-right text-center">
-        <img src="assets/img/gramedia-logo.png" alt="Gramedialogo" class="img-fluid" loading="lazy" />
-      </div>
-      <div class="col-sm-7">
-        <h5 class="mt-3">
-          Gramedia – Frontend Developer<br />July 2022 – July 2023
-        </h5>
-      </div>
-      <div class="col-sm-3">
-        <button type="button" class="btn btn-primary col-12" data-toggle="modal" data-target="#modalGramedia">
-          Look what I do
-        </button>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-sm-2 text-sm-right text-center">
-        <img src="assets/img/versalogo.png" alt="Gramedialogo" class="img-fluid" loading="lazy" />
-      </div>
-      <div class="col-sm-7">
-        <h5 class="mt-3">
-          Versa Technology – Software Engineer<br />December 2020 – July 2022
-        </h5>
-      </div>
-      <div class="col-sm-3">
-        <button type="button" class="btn btn-primary col-12" data-toggle="modal" data-target="#modalVersa">
-          Look what I do
-        </button>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-sm-2 text-sm-right text-center">
-        <img src="assets/img/cblogo.jpg" alt="cblogo" class="img-fluid" loading="lazy" />
-      </div>
-      <div class="col-sm-7">
-        <h5 class="mt-3">
-          Cakrawala Bahasa – Head of Information Technology (part time)<br />December 2020 – July 2022
-        </h5>
-      </div>
-      <div class="col-sm-3">
-        <button type="button" class="btn btn-primary col-12" data-toggle="modal" data-target="#modalCB">
-          Look what I do
-        </button>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-sm-2 text-sm-right text-center">
-        <img src="assets/img/dropshipajalogo.jpg" alt="dropshipajalogo" class="img-fluid" loading="lazy" />
-      </div>
-      <div class="col-sm-7">
-        <h5 class="mt-3">
-          DropshipAja.com – Fullstack Web Developer<br />July 2020 – October 2020
-        </h5>
-      </div>
-      <div class="col-sm-3">
-        <button type="button" class="btn btn-primary col-12" data-toggle="modal" data-target="#modaldropshipaja">
-          Look what I do
-        </button>
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <img src="assets/img/mengantar-logo.jpg" alt="Mengantar" class="company-logo" loading="lazy" />
+              <div>
+                <h3 class="company-name">Mengantar Karya Bangsa</h3>
+                <p class="job-title">Frontend / Fullstack Developer</p>
+                <span class="job-period">Feb 2024 - Aug 2026</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Developed a no-code website builder platform using ReactJS and NextJS, enabling users to create landing pages without coding</li>
+                <li>Implemented drag-and-drop features with component customization panels and predefined design templates</li>
+                <li>Built AI chatbot platform features using React.js, Next.js, Hono.js, and MongoDB with integrated CRUD operations</li>
+                <li>Converted Figma designs into responsive, reusable web interfaces with PWA support</li>
+              </ul>
+              <div class="tech-tags">
+                <span>React</span><span>Next.js</span><span>Redux</span><span>Hono.js</span><span>MongoDB</span><span>REST API</span>
+              </div>
+              <a href="https://www.buat.id/" target="_blank" rel="noopener" class="link-external">Visit Buat.id &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <img src="assets/img/dana-logo.jpg" alt="Dana" class="company-logo" loading="lazy" />
+              <div>
+                <h3 class="company-name">Dana Indonesia</h3>
+                <p class="job-title">Frontend Developer Consultant (MSBU)</p>
+                <span class="job-period">Oct 2023 - Jan 2024</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Developed PBB payment menu on Dana Mobile Application based on Figma designs and system analysis</li>
+                <li>Transformed design concepts into Dynamic UI for billing menu, enabling various products to use shared components</li>
+                <li>Built composable architecture for handling state and API communication across postpaid, prepaid, and combined types</li>
+                <li>Created comprehensive unit tests using Jest and Vue Test Utils</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Vue.js</span><span>TypeScript</span><span>Jest</span><span>Git</span><span>Jira</span><span>REST API</span>
+              </div>
+              <a href="https://play.google.com/store/apps/details?id=id.dana" target="_blank" rel="noopener" class="link-external">View on Play Store &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <img src="assets/img/gramedia-logo.png" alt="Gramedia" class="company-logo" loading="lazy" />
+              <div>
+                <h3 class="company-name">Gramedia</h3>
+                <p class="job-title">Frontend Developer</p>
+                <span class="job-period">Jul 2022 - Jul 2023</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Developed and revamped Gramedia.com online store using Angular, Vue.js, Nuxt.js, and Next.js</li>
+                <li>Built payment systems admin dashboard with auth, transaction management, and account features</li>
+                <li>Delivered features based on PRDs using Scrum framework with GitLab CI/CD</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Angular</span><span>Vue.js</span><span>Nuxt.js</span><span>React</span><span>Next.js</span><span>TypeScript</span>
+              </div>
+              <a href="https://www.gramedia.com/" target="_blank" rel="noopener" class="link-external">Visit Gramedia.com &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <img src="assets/img/versalogo.png" alt="Versa" class="company-logo" loading="lazy" />
+              <div>
+                <h3 class="company-name">Versa Technology</h3>
+                <p class="job-title">Software Engineer</p>
+                <span class="job-period">Dec 2020 - Jul 2022</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Developed Multikurir Logistics System v3 with Vue.js and Laravel API, including transactions, operations flow, and user management</li>
+                <li>Built vendor integrations with SiCepat, SAP, and Bukasend for pricing and transaction processing</li>
+                <li>Developed mobile applications for couriers, agents, and branches using React Native</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Vue.js</span><span>Laravel</span><span>React Native</span><span>SQL Server</span><span>REST API</span>
+              </div>
+              <a href="https://www.multikurir.id/" target="_blank" rel="noopener" class="link-external">Visit Multikurir.id &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <img src="assets/img/cblogo.jpg" alt="Cakrawala Bahasa" class="company-logo" loading="lazy" />
+              <div>
+                <h3 class="company-name">Cakrawala Bahasa</h3>
+                <p class="job-title">Head of IT (Part-time)</p>
+                <span class="job-period">Dec 2020 - Jul 2022</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Designed and developed company website from scratch, managing team and deployment</li>
+                <li>Led task management, code reviews, and mentoring sessions for technical staff</li>
+                <li>Brainstormed feature roadmaps with cross-functional divisions</li>
+              </ul>
+              <div class="tech-tags">
+                <span>React</span><span>Laravel</span><span>MySQL</span><span>Git</span><span>REST API</span>
+              </div>
+              <a href="https://cakrawalabahasa.com/" target="_blank" rel="noopener" class="link-external">Visit Cakrawalabahasa.com &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <img src="assets/img/dropshipajalogo.jpg" alt="DropshipAja" class="company-logo" loading="lazy" />
+              <div>
+                <h3 class="company-name">DropshipAja.com</h3>
+                <p class="job-title">Fullstack Web Developer</p>
+                <span class="job-period">Jul 2020 - Oct 2020</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Developed and maintained landing page and core systems using JavaScript, jQuery, and PHP</li>
+                <li>Built product management, content management, and notification features</li>
+              </ul>
+              <div class="tech-tags">
+                <span>JavaScript</span><span>jQuery</span><span>PHP</span><span>CodeIgniter</span><span>MySQL</span>
+              </div>
+              <a href="https://dropshipaja.com/" target="_blank" rel="noopener" class="link-external">Visit DropshipAja.com &rarr;</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-  <!-- /Work Experience -->
 
-  <!-- Project -->
-  <section class="container" id="project">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">
-          Project That I Have Been and Am Working On as a Profesional :
-        </h2>
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">&lt;projects&gt;</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Products I've built and contributed to</p>
       </div>
-    </div>
-    <hr />
-    <div class="row mt-5">
-      <div class="col-11 col-md-5 mb-3 project-image mx-auto">
-        <a href="https://dropshipaja.com/login" target="blank">
-          <img src="assets/img/project/dropshipaja.png" alt="MyAds website" class="img-fluid img-thumbnail" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-11 col-md-5 offset-md-2 mb-3 project-image mx-auto">
-        <a href="https://cakrawalabahasa.com/" target="blank">
-          <img src="assets/img/project/cakrawalabahasacom.png" alt="cakrawalabahasa website" class="img-fluid img-thumbnail" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-11 col-md-5 mb-3 project-image mx-auto">
-        <a href="https://login.multikurir.id/login/" target="blank">
-          <img src="assets/img/project/multikuririd.png" alt="Multikurir website" class="img-fluid img-thumbnail" style="height: 100%" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-11 col-md-5 offset-md-2 mb-3 project-image mx-auto">
-        <a href="https://gramedia.com/" target="blank">
-          <img src="assets/img/project/gramediaweb.png" alt="gramedia website" class="img-fluid img-thumbnail" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-11 col-md-5 mb-3 project-image mx-auto">
-        <a href="https://myads.telkomsel.com/beranda" target="blank">
-          <img src="assets/img/project/myads.png" alt="MyAds website" class="img-fluid img-thumbnail" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-11 col-md-5 offset-md-2 mb-3 project-image mx-auto">
-        <a href="https://www.immobisp.com/" target="blank">
-          <img src="assets/img/project/immobisp.png" alt="Immobisp website" class="img-fluid img-thumbnail" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
 
-    <div class="row mt-2">
-      <div class="col-11 col-md-5 mb-3 project-image mx-auto">
-        <a href="https://gestindo.com/" target="blank">
-          <img src="assets/img/project/gestindocom.png" alt="Gestindo website" class="img-fluid img-thumbnail" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
+      <h3 class="project-group-title">Professional Projects</h3>
+      <div class="projects-grid">
+        <a href="https://dropshipaja.com/login" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/dropshipaja.png" alt="DropshipAja" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>DropshipAja</h4>
+            <p>E-commerce & Dropshipping Platform</p>
+          </div>
+        </a>
+        <a href="https://cakrawalabahasa.com/" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/cakrawalabahasacom.png" alt="Cakrawala Bahasa" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Cakrawala Bahasa</h4>
+            <p>Language Education Platform</p>
+          </div>
+        </a>
+        <a href="https://login.multikurir.id/login/" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/multikuririd.png" alt="Multikurir" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Multikurir</h4>
+            <p>Logistics Management System</p>
+          </div>
+        </a>
+        <a href="https://gramedia.com/" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/gramediaweb.png" alt="Gramedia" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Gramedia</h4>
+            <p>Online Bookstore & E-commerce</p>
+          </div>
+        </a>
+        <a href="https://myads.telkomsel.com/beranda" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/myads.png" alt="MyAds Telkomsel" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>MyAds</h4>
+            <p>Telkomsel Advertising Platform</p>
+          </div>
+        </a>
+        <a href="https://www.immobisp.com/" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/immobisp.png" alt="Immobisp" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Immobisp</h4>
+            <p>Real Estate Platform</p>
+          </div>
+        </a>
+        <a href="https://gestindo.com/" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/gestindocom.png" alt="Gestindo" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Gestindo</h4>
+            <p>Business Management System</p>
+          </div>
+        </a>
+        <a href="https://www.buat.id/" target="_blank" rel="noopener" class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/buatid.png" alt="Buat.id" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Buat.id</h4>
+            <p>No-Code Website Builder</p>
           </div>
         </a>
       </div>
 
-      <div class="col-11 col-md-5 offset-md-2 project-image mb-3 mx-auto">
-        <a href="https://www.buat.id/" target="blank">
-          <img src="assets/img/project/buatid.png" alt="buat.id website" class="img-fluid img-thumbnail" loading="lazy" />
-          <div class="overlay">
-            <div class="visi-site">
-              <p class="text-center">Visit The Site</p>
+      <h3 class="project-group-title">Personal Projects</h3>
+      <div class="projects-grid">
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/sims-ppob.png" alt="SIMS PPOB" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>SIMS PPOB</h4>
+            <p>Payment & Billing App</p>
+            <div class="project-links">
+              <a href="https://sims-ppob-rafieachmadprayoga.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/sims_ppob-rafieachmadprayoga" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- /Project -->
-
-  <!-- Project -->
-  <section class="container" id="project">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">
-          Simple Projects I Created in My Free Time :
-        </h2>
-      </div>
-    </div>
-    <hr />
-    <div class="row mt-5">
-      <div class="col-11 col-md-5 project-image mb-3 mx-auto">
-        <img src="assets/img/project/sims-ppob.png" alt="sims-ppob" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-          <a href="https://sims-ppob-rafieachmadprayoga.vercel.app/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
-            </div>
-          </a>
-          <a href="https://github.com/raprayoga/sims_ppob-rafieachmadprayoga" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
         </div>
-      </div>
-      <div class="col-11 col-md-5 offset-md-2 project-image mb-3 mx-auto">
-        <img src="assets/img/project/phone-book.png" alt="cakrawalabahasa website" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-          <a href="https://phone-book-project-pi.vercel.app/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/phone-book.png" alt="Phone Book" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Phone Book</h4>
+            <p>Contact Management App</p>
+            <div class="project-links">
+              <a href="https://phone-book-project-pi.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/phone-book-project" target="_blank" rel="noopener">GitHub</a>
             </div>
-          </a>
-          <a href="https://github.com/raprayoga/phone-book-project" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-11 col-md-5 project-image mb-3 mx-auto">
-        <img src="assets/img/project/klob.png" alt="kartundangan" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-          <a href="https://klob-jobs.vercel.app/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/klob.png" alt="Klob Jobs" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Klob Jobs</h4>
+            <p>Job Listing Platform</p>
+            <div class="project-links">
+              <a href="https://klob-jobs.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/klob-jobs" target="_blank" rel="noopener">GitHub</a>
             </div>
-          </a>
-          <a href="https://github.com/raprayoga/klob-jobs" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
+          </div>
         </div>
-      </div>
-      <div class="col-11 col-md-5 offset-md-2 project-image mb-3 mx-auto">
-        <img src="assets/img/project/lawson-admin.png" alt="lawson test website" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-          <a href="http://admin-test.raprayoga.web.id/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/lawson-admin.png" alt="Lawson Admin" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Lawson Admin</h4>
+            <p>Admin Dashboard</p>
+            <div class="project-links">
+              <a href="http://admin-test.raprayoga.web.id/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/lawson-test" target="_blank" rel="noopener">GitHub</a>
             </div>
-          </a>
-          <a href="https://github.com/raprayoga/lawson-test" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-11 col-md-5 project-image mb-3 mx-auto">
-        <img src="assets/img/project/reset-pass.png" alt="reset-pass" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-          <a href="https://password-reset-checker.vercel.app/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/reset-pass.png" alt="Password Reset" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Password Reset</h4>
+            <p>Reset Password Checker</p>
+            <div class="project-links">
+              <a href="https://password-reset-checker.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/password-reset-checker" target="_blank" rel="noopener">GitHub</a>
             </div>
-          </a>
-          <a href="https://github.com/raprayoga/password-reset-checker" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
+          </div>
         </div>
-      </div>
-      <div class="col-11 col-md-5 offset-md-2 project-image mb-3 mx-auto">
-        <img src="assets/img/project/pintro.png" alt="pintro" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-          <a href="https://pintro-project-68s438bcq-raprayoga.vercel.app/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/pintro.png" alt="Pintro" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Pintro</h4>
+            <p>Digital Product Platform</p>
+            <div class="project-links">
+              <a href="https://pintro-project-68s438bcq-raprayoga.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/pintro-project" target="_blank" rel="noopener">GitHub</a>
             </div>
-          </a>
-          <a href="https://github.com/raprayoga/pintro-project" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-11 col-md-5 project-image mb-3 mx-auto">
-        <img src="assets/img/project/restaurant.png" alt="simple restaurant website" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-          <a href="https://simple-restaurant-blush.vercel.app/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/restaurant.png" alt="Restaurant" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Restaurant</h4>
+            <p>Simple Restaurant Website</p>
+            <div class="project-links">
+              <a href="https://simple-restaurant-blush.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/admin-panel" target="_blank" rel="noopener">GitHub</a>
             </div>
-          </a>
-          <a href="https://github.com/raprayoga/admin-panel" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
+          </div>
         </div>
-      </div>
-      <div class="col-11 col-md-5 offset-md-2 project-image mb-3 mx-auto">
-        <img src="assets/img/project/portal-admin.png" alt="admin portal" class="img-fluid img-thumbnail" loading="lazy" />
-        <div class="overlay">
-
-          <a href="https://admin-panel-zeta-eight.vercel.app/" target="blank">
-            <div class="visit-sample-site">
-              <p class="text-center">Visit The Site</p>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/portal-admin.png" alt="Portal Admin" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Portal Admin</h4>
+            <p>Admin Panel Dashboard</p>
+            <div class="project-links">
+              <a href="https://admin-panel-zeta-eight.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/simple-restaurant" target="_blank" rel="noopener">GitHub</a>
             </div>
-          </a>
-          <a href="https://github.com/raprayoga/simple-restaurant" target="blank">
-            <div class="visit-github">
-              <p class="text-center">Visit Github</p>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- /Project -->
 
-  <!-- Certificate -->
-  <section class="container" id="certif">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">
-          Certificates Earned After Completing Courses
-        </h2>
+  <!-- Certificates -->
+  <section class="section section-alt" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">&lt;certificates&gt;</p>
+        <h2 class="section-title">Certificates</h2>
+        <p class="section-desc">Continuous learning and professional development</p>
       </div>
-    </div>
-    <hr />
-    <div id="carouselExampleCaptions2" class="carousel slide col-sm-8 offset-sm-2" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions2" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions2" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions2" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a class="example-image-link" href="assets/img/sertif/udemy-react.jpg" data-lightbox="example-set"
-            data-title="React - the complete guide from Udemy.">
-            <img src="assets/img/sertif/udemy-react.jpg" class="d-block w-100 example-image"
-              alt="Certificate React - the complete guide from Udemy" loading="lazy" />
-          </a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>React - the complete guide from Udemy</h5>
-            <p>
-              In this course I learn about deep dive in react, hooks, route, nextjs, redux.
-            </p>
+      <div class="cert-grid">
+        <div class="cert-card" data-animate>
+          <div class="cert-img">
+            <img src="assets/img/sertif/udemy-react.jpg" alt="React Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <h4>React - The Complete Guide</h4>
+            <p>Udemy</p>
+            <span class="cert-desc">Deep dive into React, hooks, routing, Next.js, and Redux</span>
           </div>
         </div>
-        <div class="carousel-item">
-          <a class="example-image-link" href="assets/img/sertif/flutter-udemy.jpg" data-lightbox="example-set"
-            data-title="Flutter & Dart - the complete guide from Udemy">
-            <img src="assets/img/sertif/flutter-udemy.jpg" class="d-block w-100 example-image"
-              alt="Flutter & Dart - the complete guide from Udemy" loading="lazy" />
-          </a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Flutter & Dart - the complete guide from Udemy</h5>
-            <p>
-              In this course I learn solid fundamental of dart and flutter, and how to develop some mobile apps until
-              how to publish
-            </p>
+        <div class="cert-card" data-animate>
+          <div class="cert-img">
+            <img src="assets/img/sertif/flutter-udemy.jpg" alt="Flutter Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <h4>Flutter & Dart - Complete Guide</h4>
+            <p>Udemy</p>
+            <span class="cert-desc">Fundamentals of Dart and Flutter for mobile app development</span>
           </div>
         </div>
-        <div class="carousel-item">
-          <a class="example-image-link" href="assets/img/sertif/fonted_expert.jpg" data-lightbox="example-set"
-            data-title="Become a Front-end Web Developer Expert.">
-            <img src="assets/img/sertif/fonted_expert.jpg" class="d-block w-100 example-image"
-              alt="Certificate Become a Front-end Web Developer Expert Dicoding" loading="lazy" />
-          </a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Front-end Web Developer Expert from Dicoding</h5>
-            <p>
-              In this course I learn about mobile first approach, acceibilities, clean code, pwa, and automation
-              testing.
-            </p>
+        <div class="cert-card" data-animate>
+          <div class="cert-img">
+            <img src="assets/img/sertif/fonted_expert.jpg" alt="Frontend Expert Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <h4>Front-end Web Developer Expert</h4>
+            <p>Dicoding</p>
+            <span class="cert-desc">Mobile-first, accessibility, clean code, PWA, and testing</span>
           </div>
         </div>
-      </div>
-      <a class="carousel-control-prev carousel-control" href="#carouselExampleCaptions2" role="button"
-        data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next carousel-control" href="#carouselExampleCaptions2" role="button"
-        data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </section>
-  <!-- /Certificate -->
-   
-  <!-- Medium -->
-  <section class="container" id="contact">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">A Place To Share Stories And Experiences :</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-8 col-sm-4 offset-2 offset-sm-4 text-center">
-        <a href="https://medium.com/@raprayoga" target="blank">
-          <img src="assets/img/medium.png" alt="Instagram" class="img-fluid contact-logo" loading="lazy" />
-        </a>
       </div>
     </div>
   </section>
-  <!-- /Contact -->
 
   <!-- Contact -->
-  <section class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">Please Contact Me At :</h2>
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">&lt;contact&gt;</p>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">Let's build something great together</p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-6 col-sm-4 offset-sm-2 text-right">
-        <a href="https://www.instagram.com/raprayoga.dev/" target="blank">
-          <img src="assets/img/ig.png" alt="Instagram" class="img-fluid contact-logo" loading="lazy" />
+      <div class="contact-grid">
+        <a href="https://www.linkedin.com/in/rafie-achmad-prayoga-8b1ba2192/" target="_blank" rel="noopener" class="contact-card" data-animate>
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <h4>LinkedIn</h4>
+          <p>Connect with me</p>
         </a>
-      </div>
-      <div class="col-6 col-sm-4 text-sm-left">
-        <a href="https://www.linkedin.com/in/rafie-achmad-prayoga-8b1ba2192/" target="blank">
-          <img src="assets/img/linkedinlogo.png" alt="Linkedin" class="img-fluid contact-logo" loading="lazy" />
+        <a href="https://www.instagram.com/raprayoga.stories.tsx/" target="_blank" rel="noopener" class="contact-card" data-animate>
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          <h4>Instagram</h4>
+          <p>Follow @raprayoga.stories.tsx</p>
+        </a>
+        <a href="https://medium.com/@raprayoga" target="_blank" rel="noopener" class="contact-card" data-animate>
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          <h4>Medium</h4>
+          <p>Read my articles</p>
         </a>
       </div>
     </div>
   </section>
-  <!-- /Contact -->
 
-
-  <!-- MODAL for Experience Details -->
-  <div class="modal fade" id="modalMengantar" tabindex="-1" role="dialog" aria-labelledby="modalDanaTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalDanaTitle">Gramedia</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ● Develop a no-code website builder platform using ReactJS and NextJS, enabling users to create landing pages
-          without coding. <br>
-          ● Implement drag and drop feature to allow users to add components (text, button, image, slider, video, Google
-          Maps, etc. <br>) to canvas. <br>
-          ● Create component setting panel to let users customize the appearance and function of each component. <br>
-          ● Integrate predefined design templates that users can apply instantly. <br>
-          ● Add extra features like anti copy-paste and auto redirect functionality. <br>
-          ● The technology I use is Javascript, ReactJS, NextJS, Redux, Git, REST API. <br><br>
-          Visit <a target="blank" href="https://www.buat.id/">Buat.id</a>
-
-          <hr/>
-          ● Developed AI chatbot platform features using React.js, Next.js, Hono.js, and MongoDB. <br>
-          ● Integrated CRUD operations and REST APIs for frontend and backend communication. <br>
-          ● Optimized AI prompts and chatbot response flows to improve interaction quality. <br>
-          ● Converted Figma designs into responsive and reusable web interfaces. <br>
-          ● Participated in design reviews and proposed practical UI/UX improvements. <br>
-          ● Implemented PWA support, performed bug fixing, and improved code maintainability through refactoring. <br>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalDana" tabindex="-1" role="dialog" aria-labelledby="modalDanaTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalDanaTitle">Gramedia</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ● Develop PBB payment menu on Dana Mobile Application based on figma and system analyst
-          using VueJs 3 and Typescript. <br>
-          ● Transform design concepts into Dynamic UI for billing menu on Dana Mobile Application so
-          various of products can use the same components. <br>
-          ● Build dynamic UI from base component and then bigger component and then template for
-          postpaid type, prepaid type, combined type and composable for handle state and
-          comunicating with API. <br>
-          ● Create unit test using jest and vue-test-utils for component dynamic UI and composable for
-          verify that the code is safe to deploy. <br>
-          ● The technology I use is Typescript, VueJs, Jest, Vue test utils, Git, Bitbucket, REST API, Jira. <br><br>
-          Visit <a target="blank" href="https://play.google.com/store/apps/details?id=id.dana">Playstore</a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalGramedia" tabindex="-1" role="dialog" aria-labelledby="modalGramediaTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalGramediaTitle">Gramedia</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ● Develop Gramedia.com online store using Typescript and Angular. Create new features
-          based on user request and design that UI/UX designer create and fix bugs that found. <br>
-          ● Develop Revamp Gramedia.com online store using Typescript, VueJS, NuxtJS. Create all
-          feature based on PRD. <br>
-          ● Develop Payment systems for Gramedia like administrator dashboard using ReactJS and
-          Next JS. The feature like auth system, show transaction list and edit, manage account and
-          many more. <br>
-          ● Redevelop Revamp Gramedia.com online store using Typescript, ReactJS, NextJS. Create all
-          feature based on PRD start from zero. <br>
-          ● The technology I use is Javascript, Typescript, Angular, VueJs, NuxtJS, ReactJS, NextJS,
-          Git, GitLab, REST API, Scrum Framework. <br><br>
-          Visit <a target="blank" href="https://www.gramedia.com/">gramedia.com</a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalVersa" tabindex="-1" role="dialog" aria-labelledby="modalVersaTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalVersaTitle">Versa Technology</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ● Develop Multikurir Logistics System version3 using vue JS and laravel API. Create full features based on
-          version2 such as transaction, flow operational, manage product, manage users, role and permissions, and many
-          more. <br>
-          ● Discuss for new awesome feature and revision from version2 which will later be implemented in version3 to
-          produce applications that provide a better performance and experience. <br>
-          ● Make integration systems with other vendors such as Sicepat, SAP, and Bukasend, so users can be check the
-          price, and create a transaction using these logistics. <br>
-          ● Develop a mobile application that will be used by couriers, agents, branches, in the operational process, so
-          that changes in package status can be updated automatically and the operational process becomes faster and
-          easier. <br>
-          ● The technology I use is Javascript, Vue JS, PHP, Laravel, Microsoft SQL Server, Git, Bitbucket, REST API,
-          React Native, Microsoft Server. <br><br>
-          Visit <a target="blank" href="https://www.multikurir.id/">multikurir.id</a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalCB" tabindex="-1" role="dialog" aria-labelledby="modalCB aria-hidden=" true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCBTitle">Cakrawala Bahasa</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ● Designing Cakrawala Bahasa’s Website using Figma then developing it as a team with staff. Deploy to the
-          server (shared hosting) and fix it if there is an error. <br>
-          ● Brainstorming with other divisions for new features or changes to the website then add the agreed tasks to
-          the backlog so that the features to be added are efficient and effective. <br>
-          ● Organize and assign tasks listed in the backlog to staff, reminding deadlines, and conduct code reviews of
-          tasks performed by staff. <br>
-          ● Holding mentoring sessions to provide training to staff on the technologies they are not familiar with that
-          are used on the website. <br>
-          ● The technology I use is Javascript, React JS, PHP, Laravel, MySQL, Git, Github, REST API, Shared Hosting.
-          <br><br>
-          Visit <a target="blank" href="https://cakrawalabahas.com/">cakrawalabahasa.com</a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modaldropshipaja" tabindex="-1" role="dialog" aria-labelledby="modaldropshipajaTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modaldropshipajaTitle">DropshipAja.com</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ● Develop and resolve bug dropshipaja landing page using javascript and jquery. <br>
-          ● Develop and resolve bug dropshipaja systems such as manage product, manage contents, and message and
-          notification using PHP native. <br>
-          ● The technology I use is Javascript, JQuery, PHP, Codeigniter, MySQL, Git, GitLab. <br><br>
-          Visit <a target="blank" href="https://dropshipaja.com/">dropshipaja.com</a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="container-fluid">
-    <div class="row justify-content-center">
-      <p class="text-center">Make with love by @raprayoga</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        <span class="footer-logo">&lt;raprayoga/&gt;</span> &mdash; Built with passion &amp; clean code
+      </p>
     </div>
   </footer>
 
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/lightbox.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
-
 </html>
