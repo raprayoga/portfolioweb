@@ -20,18 +20,18 @@
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">
+      <a href="#hero" class="nav-logo">
         <span class="logo-bracket">&lt;</span>raprayoga<span class="logo-bracket">/&gt;</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Get in touch &nearr;</a></li>
       </ul>
     </div>
   </nav>
@@ -41,59 +41,278 @@
     <div class="hero-bg-grid"></div>
     <div class="container hero-content">
       <div class="hero-text">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Rafie Achmad<br><span class="text-accent">Prayoga</span></h1>
-        <p class="hero-role"><span class="typed-prefix">$</span> Fullstack Software Engineer</p>
+        <span class="eyebrow">RAFIE ACHMAD PRAYOGA / FULLSTACK SOFTWARE ENGINEER</span>
+        <h1 class="hero-name">Scalable apps.<br><span class="text-accent">Clean architecture.</span><br>Real impact.</h1>
         <p class="hero-desc">
-          Results-driven engineer with <strong>5+ years</strong> building scalable web applications, 
-          AI platforms, fintech modules, logistics systems, and e-commerce platforms. 
-          Passionate about clean code and creating technology that makes a difference.
+          Results-driven engineer with <strong>5+ years</strong> building scalable web applications,
+          AI platforms, fintech modules, logistics systems, and e-commerce platforms.
+          I care about clean code and technology that makes a difference.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Get in Touch</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">Projects Delivered</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">6+</span>
-            <span class="stat-label">Companies</span>
-          </div>
+          <a href="#projects" class="btn btn-primary">Explore the projects &darr;</a>
+          <a href="#contact" class="btn btn-outline">Get in touch &nearr;</a>
         </div>
       </div>
-      <div class="hero-image">
-        <div class="hero-image-wrapper">
-          <img src="assets/img/profile.webp" alt="Rafie Achmad Prayoga" loading="eager" />
-          <div class="hero-image-glow"></div>
-        </div>
+      <div class="hero-visual">
+        <aside class="editor" aria-label="A short developer introduction">
+          <div class="editor-head">
+            <span class="editor-dots" aria-hidden="true">&#9679; &#9679; &#9679;</span>
+            <span class="editor-file">about-me.json</span>
+          </div>
+          <pre>{
+  <span class="key">"name"</span>: <span class="string">"Rafie Achmad Prayoga"</span>,
+  <span class="key">"role"</span>: <span class="string">"Fullstack Software Engineer"</span>,
+  <span class="key">"focus"</span>: [
+    <span class="string">"scalable web apps"</span>,
+    <span class="string">"clean architecture"</span>,
+    <span class="string">"real impact"</span>
+  ],
+  <span class="key">"stack"</span>: [<span class="string">"React"</span>, <span class="string">"Next.js"</span>, <span class="string">"Vue"</span>, <span class="string">"Nuxt.js"</span>, <span class="string">"Tailwind"</span>, <span class="string">"Laravel"</span>, <span class="string">"Node.js"</span>],
+  <span class="key">"status"</span>: <span class="string">"open to opportunities"</span>
+}</pre>
+          <div class="editor-foot"><span>Small details. Better products.</span><span>UTF-8</span></div>
+        </aside>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
+    <div class="container hero-foot">
+      <span><strong>01</strong> 5+ Years experience</span>
+      <span><strong>02</strong> 20+ Projects delivered</span>
+      <span><strong>03</strong> 6+ Companies</span>
     </div>
   </header>
 
-  <!-- Skills -->
+  <!-- Selected Work -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">SELECTED WORK</span>
+          <h2 class="section-title">From a problem<br>to a working thing.</h2>
+        </div>
+        <p class="section-top-desc">Products I've built and contributed to — from no-code platforms to fintech, logistics and e-commerce systems.</p>
+      </div>
+
+      <article class="project" data-animate>
+        <div class="project-visual">
+          <a href="https://www.buat.id/" target="_blank" rel="noopener">
+            <img src="assets/img/project/buatid.png" alt="Buat.id no-code website builder" loading="lazy" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <span class="eyebrow">01 / NO-CODE PLATFORM</span>
+          <h3>Buat.id</h3>
+          <p>A no-code website builder with drag-and-drop editing, customizable component panels and predefined templates — letting anyone ship a landing page without writing code.</p>
+          <ul class="tag-list">
+            <li class="tag">React</li><li class="tag">Next.js</li><li class="tag">Redux</li><li class="tag">Hono.js</li><li class="tag">MongoDB</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://www.buat.id/" target="_blank" rel="noopener">Visit site &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reverse" data-animate>
+        <div class="project-visual warm">
+          <a href="https://gramedia.com/" target="_blank" rel="noopener">
+            <img src="assets/img/project/gramedia.webp" alt="Gramedia online bookstore" loading="lazy" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <span class="eyebrow">02 / E-COMMERCE</span>
+          <h3>Gramedia</h3>
+          <p>Revamped Gramedia.com online store and built a payments admin dashboard with authentication, transaction management and account features, delivered through Scrum with GitLab CI/CD.</p>
+          <ul class="tag-list">
+            <li class="tag">Angular</li><li class="tag">Vue.js</li><li class="tag">Nuxt.js</li><li class="tag">Next.js</li><li class="tag">TypeScript</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://www.gramedia.com/" target="_blank" rel="noopener">Visit site &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-animate>
+        <div class="project-visual">
+          <a href="https://login.multikurir.id/login/" target="_blank" rel="noopener">
+            <img src="assets/img/project/multikuririd.png" alt="Multikurir logistics management system" loading="lazy" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <span class="eyebrow">03 / LOGISTICS</span>
+          <h3>Multikurir</h3>
+          <p>Multikurir v3 logistics platform covering transactions, operations flow and user management, with vendor integrations for SiCepat, SAP and Bukasend pricing and processing.</p>
+          <ul class="tag-list">
+            <li class="tag">Vue.js</li><li class="tag">Laravel</li><li class="tag">React Native</li><li class="tag">SQL Server</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://login.multikurir.id/login/" target="_blank" rel="noopener">Visit site &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reverse" data-animate>
+        <div class="project-visual warm">
+          <a href="https://dropshipaja.com/login" target="_blank" rel="noopener">
+            <img src="assets/img/project/dropshipaja.png" alt="DropshipAja e-commerce platform" loading="lazy" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <span class="eyebrow">04 / E-COMMERCE</span>
+          <h3>DropshipAja</h3>
+          <p>Landing pages and core systems for a dropshipping platform, including product management, content management and notification features.</p>
+          <ul class="tag-list">
+            <li class="tag">JavaScript</li><li class="tag">jQuery</li><li class="tag">PHP</li><li class="tag">CodeIgniter</li><li class="tag">MySQL</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://dropshipaja.com/login" target="_blank" rel="noopener">Visit site &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-animate>
+        <div class="project-visual">
+          <a href="https://myads.telkomsel.com/beranda" target="_blank" rel="noopener">
+            <img src="assets/img/project/myads.png" alt="MyAds Telkomsel advertising platform" loading="lazy" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <span class="eyebrow">05 / ADVERTISING</span>
+          <h3>MyAds</h3>
+          <p>A self-serve advertising platform for Telkomsel merchants to manage campaigns, creatives and performance from a single dashboard.</p>
+          <ul class="tag-list">
+            <li class="tag">Frontend</li><li class="tag">Dashboard</li><li class="tag">REST API</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://myads.telkomsel.com/beranda" target="_blank" rel="noopener">Visit site &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reverse" data-animate>
+        <div class="project-visual warm">
+          <a href="https://cakrawalabahasa.com/" target="_blank" rel="noopener">
+            <img src="assets/img/project/cakrawalabahasacom.png" alt="Cakrawala Bahasa education platform" loading="lazy" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <span class="eyebrow">06 / EDUCATION</span>
+          <h3>Cakrawala Bahasa</h3>
+          <p>A language education website and management system, designed and built from scratch — including team leadership, task management and deployment.</p>
+          <ul class="tag-list">
+            <li class="tag">React</li><li class="tag">Laravel</li><li class="tag">MySQL</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://cakrawalabahasa.com/" target="_blank" rel="noopener">Visit site &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-animate>
+        <div class="project-visual">
+          <a href="https://gestindo.com/" target="_blank" rel="noopener">
+            <img src="assets/img/project/gestindocom.png" alt="Gestindo business management system" loading="lazy" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <span class="eyebrow">07 / BUSINESS TOOLS</span>
+          <h3>Gestindo</h3>
+          <p>A business management system with operational dashboards and administrative workflows for day-to-day operations.</p>
+          <ul class="tag-list">
+            <li class="tag">Web App</li><li class="tag">Admin Panel</li><li class="tag">MySQL</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://gestindo.com/" target="_blank" rel="noopener">Visit site &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <h3 class="project-group-title">More Projects</h3>
+      <div class="projects-grid">
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/kartundangan.webp" alt="Kartundangan" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Kartundangan</h4>
+            <p>Digital Wedding Invitation Platform</p>
+            <div class="project-links">
+              <a href="https://kartundangan.com" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/klob.png" alt="Klob Jobs" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Klob Jobs</h4>
+            <p>Job Listing Platform</p>
+            <div class="project-links">
+              <a href="https://klob-jobs.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/klob-jobs" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-animate>
+          <div class="project-img">
+            <img src="assets/img/project/restaurant.PNG" alt="Restaurant" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h4>Restaurant</h4>
+            <p>Simple Restaurant Website</p>
+            <div class="project-links">
+              <a href="https://simple-restaurant-blush.vercel.app/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/raprayoga/admin-panel" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-alt about" id="about">
+    <div class="container about-grid">
+      <div class="about-intro">
+        <span class="eyebrow">HOW I APPROACH THE WORK</span>
+        <h2 class="section-title">Understand it.<br>Build it.<br>Make it clearer.</h2>
+        <div class="about-photo">
+          <img src="assets/img/profile.webp" alt="Rafie Achmad Prayoga" loading="lazy" />
+        </div>
+      </div>
+      <div class="about-body">
+        <p>I'm Rafie, a fullstack software engineer focused on building tools that help people get things done. Over 5+ years I've shipped scalable web applications, AI platforms, fintech modules, logistics systems and e-commerce products across startups and enterprises.</p>
+        <p>My work starts with the problem and the person using it. I build with React, Next.js, Vue, Laravel and Node.js, keep state predictable, and write down the decisions someone else will need to understand later.</p>
+        <div class="principles">
+          <article>
+            <h3>Make every interaction count.</h3>
+            <p>I build interfaces that feel intuitive, communicate clearly, and help users accomplish their goals without unnecessary friction.</p>
+          </article>
+          <article>
+            <h3>Build for real-world conditions.</h3>
+            <p>I consider edge cases, slow networks, empty states, and accessibility—not just the ideal user journey.</p>
+          </article>
+          <article>
+            <h3>Write code that moves teams forward.</h3>
+            <p>I prioritize maintainable architecture, readable code, and clear technical decisions so that future improvements are easier to make.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Stack -->
   <section class="section" id="skills">
     <div class="container">
-      <div class="section-header">
-        <p class="section-tag">&lt;skills&gt;</p>
-        <h2 class="section-title">Tech Stack</h2>
-        <p class="section-desc">Technologies I work with to build modern applications</p>
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">TOOLS / STACK</span>
+          <h2 class="section-title">A practical<br>starting point.</h2>
+        </div>
+        <p class="section-top-desc">Technologies I work with to build modern, maintainable applications.</p>
       </div>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3 class="skill-category-title">
-            <span class="skill-icon">&#9672;</span> Frontend
-          </h3>
+      <div class="stack-grid">
+        <div class="stack-block">
+          <h3>Frontend</h3>
           <div class="skill-items">
             <div class="skill-item">
               <img src="assets/img/skillset/reactjs_compressed.webp" alt="React JS" loading="lazy" />
@@ -133,10 +352,8 @@
             </div>
           </div>
         </div>
-        <div class="skill-category">
-          <h3 class="skill-category-title">
-            <span class="skill-icon">&#9672;</span> Backend
-          </h3>
+        <div class="stack-block">
+          <h3>Backend</h3>
           <div class="skill-items">
             <div class="skill-item">
               <img src="assets/img/skillset/node.png" alt="Node JS" loading="lazy" />
@@ -154,16 +371,10 @@
               <img src="assets/img/skillset/laravel_compressed.webp" alt="Laravel" loading="lazy" />
               <span>Laravel</span>
             </div>
-            <!-- <div class="skill-item">
-              <img src="assets/img/skillset/python.png" alt="Python" loading="lazy" />
-              <span>Python</span>
-            </div> -->
           </div>
         </div>
-        <div class="skill-category">
-          <h3 class="skill-category-title">
-            <span class="skill-icon">&#9672;</span> Database & Tools
-          </h3>
+        <div class="stack-block">
+          <h3>Database &amp; Tools</h3>
           <div class="skill-items">
             <div class="skill-item">
               <img src="assets/img/skillset/MySQL_compressed.webp" alt="MySQL" loading="lazy" />
@@ -179,6 +390,10 @@
             </div>
           </div>
         </div>
+        <!-- <div class="stack-block">
+          <h3>Workflow</h3>
+          <p>Git workflows, code review, CI/CD, unit testing, Agile / Scrum, and cross-functional collaboration.</p>
+        </div> -->
       </div>
     </div>
   </section>
@@ -186,10 +401,12 @@
   <!-- Work Experience -->
   <section class="section section-alt" id="experience">
     <div class="container">
-      <div class="section-header">
-        <p class="section-tag">&lt;experience&gt;</p>
-        <h2 class="section-title">Work Experience</h2>
-        <p class="section-desc">My professional journey building real-world products</p>
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">EXPERIENCE</span>
+          <h2 class="section-title">Where I've<br>done the work.</h2>
+        </div>
+        <p class="section-top-desc">My professional journey building real-world products across six companies.</p>
       </div>
       <div class="timeline">
 
@@ -302,7 +519,7 @@
               <img src="assets/img/cblogo.jpg" alt="Cakrawala Bahasa" class="company-logo" loading="lazy" />
               <div>
                 <h3 class="company-name">Cakrawala Bahasa</h3>
-                <p class="job-title">Head of IT (Part-time)</p>
+                <p class="job-title">Head of IT (Unpiad Freelance)</p>
                 <span class="job-period">Dec 2020 - Jul 2022</span>
               </div>
             </div>
@@ -348,211 +565,15 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-tag">&lt;projects&gt;</p>
-        <h2 class="section-title">Projects</h2>
-        <p class="section-desc">Products I've built and contributed to</p>
-      </div>
-
-      <h3 class="project-group-title">Professional Projects</h3>
-      <div class="projects-grid">
-        <a href="https://www.buat.id/" target="_blank" rel="noopener" class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/buatid.png" alt="Buat.id" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Buat.id</h4>
-            <p>No-Code Website Builder</p>
-          </div>
-        </a>
-        <a href="https://gramedia.com/" target="_blank" rel="noopener" class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/gramedia.webp" alt="Gramedia" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Gramedia</h4>
-            <p>Online Bookstore & E-commerce</p>
-          </div>
-        </a>
-        <a href="https://login.multikurir.id/login/" target="_blank" rel="noopener" class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/multikuririd.png" alt="Multikurir" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Multikurir</h4>
-            <p>Logistics Management System</p>
-          </div>
-        </a>
-        <a href="https://dropshipaja.com/login" target="_blank" rel="noopener" class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/dropshipaja.png" alt="DropshipAja" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>DropshipAja</h4>
-            <p>E-commerce & Dropshipping Platform</p>
-          </div>
-        </a>
-        <a href="https://myads.telkomsel.com/beranda" target="_blank" rel="noopener" class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/myads.png" alt="MyAds Telkomsel" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>MyAds</h4>
-            <p>Telkomsel Advertising Platform</p>
-          </div>
-        </a>
-        <a href="https://cakrawalabahasa.com/" target="_blank" rel="noopener" class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/cakrawalabahasacom.png" alt="Cakrawala Bahasa" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Cakrawala Bahasa</h4>
-            <p>Language Education Platform</p>
-          </div>
-        </a>
-        <a href="https://gestindo.com/" target="_blank" rel="noopener" class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/gestindocom.png" alt="Gestindo" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Gestindo</h4>
-            <p>Business Management System</p>
-          </div>
-        </a>
-      </div>
-
-      <h3 class="project-group-title mini-projects-title">Mini Projects</h3>
-      <div class="projects-grid">
-        <!-- <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/sims-ppob.PNG" alt="SIMS PPOB" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>SIMS PPOB</h4>
-            <p>Payment & Billing App</p>
-            <div class="project-links">
-              <a href="https://sims-ppob-rafieachmadprayoga.vercel.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/sims_ppob-rafieachmadprayoga" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/phone-book.PNG" alt="Phone Book" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Phone Book</h4>
-            <p>Contact Management App</p>
-            <div class="project-links">
-              <a href="https://phone-book-project-pi.vercel.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/phone-book-project" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div> -->
-        <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/kartundangan.webp" alt="Kartundangan" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Kartundangan</h4>
-            <p>Digital wedding Invitation Platform</p>
-            <div class="project-links">
-              <a href="https://kartundangan-next.vercel.app/" target="_blank" rel="noopener">Live</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/klob.png" alt="Klob Jobs" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Klob Jobs</h4>
-            <p>Job Listing Platform</p>
-            <div class="project-links">
-              <a href="https://klob-jobs.vercel.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/klob-jobs" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/lawson-admin.PNG" alt="Lawson Admin" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Lawson Admin</h4>
-            <p>Admin Dashboard</p>
-            <div class="project-links">
-              <a href="http://admin-test.raprayoga.web.id/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/lawson-test" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/reset-pass.png" alt="Password Reset" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Password Reset</h4>
-            <p>Reset Password Checker</p>
-            <div class="project-links">
-              <a href="https://password-reset-checker.vercel.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/password-reset-checker" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/pintro.PNG" alt="Pintro" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Pintro</h4>
-            <p>Digital Product Platform</p>
-            <div class="project-links">
-              <a href="https://pintro-project-68s438bcq-raprayoga.vercel.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/pintro-project" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div> -->
-        <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/restaurant.PNG" alt="Restaurant" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Restaurant</h4>
-            <p>Simple Restaurant Website</p>
-            <div class="project-links">
-              <a href="https://simple-restaurant-blush.vercel.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/admin-panel" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="project-card" data-animate>
-          <div class="project-img">
-            <img src="assets/img/project/portal-admin.png" alt="Portal Admin" loading="lazy" />
-          </div>
-          <div class="project-info">
-            <h4>Portal Admin</h4>
-            <p>Admin Panel Dashboard</p>
-            <div class="project-links">
-              <a href="https://admin-panel-zeta-eight.vercel.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/raprayoga/simple-restaurant" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </section>
-
   <!-- Certificates -->
-  <section class="section section-alt" id="certificates">
+  <section class="section" id="certificates">
     <div class="container">
-      <div class="section-header">
-        <p class="section-tag">&lt;certificates&gt;</p>
-        <h2 class="section-title">Certificates</h2>
-        <p class="section-desc">Continuous learning and professional development</p>
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">CERTIFICATES</span>
+          <h2 class="section-title">Always<br>learning.</h2>
+        </div>
+        <p class="section-top-desc">Continuous learning and professional development.</p>
       </div>
       <div class="cert-grid">
         <div class="cert-card" data-animate>
@@ -570,7 +591,7 @@
             <img src="assets/img/sertif/flutter-udemy.jpg" alt="Flutter Certificate" loading="lazy" />
           </div>
           <div class="cert-info">
-            <h4>Flutter & Dart - Complete Guide</h4>
+            <h4>Flutter &amp; Dart - Complete Guide</h4>
             <p>Udemy</p>
             <span class="cert-desc">Fundamentals of Dart and Flutter for mobile app development</span>
           </div>
@@ -590,12 +611,14 @@
   </section>
 
   <!-- Contact -->
-  <section class="section" id="contact">
+  <section class="section section-alt" id="contact">
     <div class="container">
-      <div class="section-header">
-        <p class="section-tag">&lt;contact&gt;</p>
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="section-desc">Let's build something great together</p>
+      <div class="contact-panel" data-animate>
+        <span class="eyebrow">HAVE SOMETHING IN MIND?</span>
+        <h2 class="section-title">Let's build something<br>worth using.</h2>
+        <div class="contact-actions">
+          <a class="btn btn-warm" href="https://www.linkedin.com/in/rafie-achmad-prayoga-8b1ba2192/" target="_blank" rel="noopener">Connect on LinkedIn &nearr;</a>
+        </div>
       </div>
       <div class="contact-grid">
         <a href="https://www.linkedin.com/in/rafie-achmad-prayoga-8b1ba2192/" target="_blank" rel="noopener" class="contact-card" data-animate>
@@ -619,10 +642,16 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p class="footer-text">
+    <div class="container footer-row">
+      <span class="footer-text">
         <span class="footer-logo">&lt;raprayoga/&gt;</span> &mdash; Built with passion &amp; clean code
-      </p>
+      </span>
+      <span class="footer-links">
+        <a href="#projects">Projects</a> &middot;
+        <a href="#about">About</a> &middot;
+        <a href="#experience">Experience</a> &middot;
+        <a href="#contact">Contact</a>
+      </span>
     </div>
   </footer>
 

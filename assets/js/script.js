@@ -25,8 +25,9 @@
 
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', function () {
-      navToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
+      var isOpen = navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
     // Close menu when a link is clicked
@@ -34,6 +35,7 @@
       link.addEventListener('click', function () {
         navToggle.classList.remove('active');
         navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
